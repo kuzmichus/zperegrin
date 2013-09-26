@@ -1,0 +1,10 @@
+#!/bin/bash
+export CC="gcc"
+export CFLAGS="-O1 -g3 -Wall"
+if [ -f Makefile ]; then
+	sudo make --silent clean
+	sudo phpize --silent --clean
+fi
+phpize --silent
+./configure --silent --enable-test
+make --silent && sudo make --silent install

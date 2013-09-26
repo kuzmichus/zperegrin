@@ -1,0 +1,13 @@
+.idea
+ext/.deps
+ext/.libs/
+ext/Makefile
+ext/Makefile.fragments
+ext/Makefile.global
+ext/Makefile.objects
+ext/acinclude.m4
+*.o
+*.lo
+*.loT
+.temp/
+
